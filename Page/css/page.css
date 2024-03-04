@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  height: 100%;
+  bottom: 0px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  padding: 12px 60px 5px 20px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.header__logo__back {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.header__logo__h1 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+  flex-grow: 1;
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carte {
+  padding: 32px 17px;
+  position: relative;
+  z-index: 1;
+  margin-top: -2rem;
+  background-color: #F6F6F6;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.carte__div__header {
+  display: flex;
+}
+
+.carte__div__title {
+  padding-right: 6px;
+  width: 91%;
+  font-family: Shrikhand;
+  font-size: 27px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+.card__article__icon {
+  font-size: 22px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.carte__div__main {
+  margin-bottom: 40px;
+}
+
+.carte__div__subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.carte__div__subtitle:after {
+  content: "";
+  position: absolute;
+  margin-top: 1.3rem;
+  margin-left: 1rem;
+  left: 0px;
+  border: 3px solid #99E2D0;
+  width: 40px;
+}
+
+.carte__div__article {
+  position: relative;
+  background-color: #FFFFFF;
+  margin-bottom: 12px;
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 15.04px;
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carte__div__article__div {
+  width: 100%;
+  position: relative;
+  padding: 13.5px 15px;
+}
+
+.carte__div__article__div__title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.carte__div__article__div__text {
+  font-size: 15px;
+}
+
+.carte__div__article__div__title, .carte__div__article__div__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical !important;
+}
+
+.carte__div__article__div__price {
+  font-weight: bold;
+  font-size: 15px;
+  align-self: flex-end;
+  padding-bottom: 13.5px;
+  padding-right: 15px;
+}
+
+.green-box {
+  position: relative;
+  width: 0px;
+  background-color: #99E2D0;
+  z-index: 0;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check__icon {
+  color: white;
+  font-size: 20px;
+}
+
+.article-toggle-checkbox:checked ~ .carte__div__article .green-box {
+  pointer-events: auto;
+  width: 87px;
+}
+
+.article-toggle-checkbox {
+  display: none;
+  height: 100%;
+}
+
+.article-toggle-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.div__button {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-size: 16px;
+  border: none;
+  color: #FFFFFF;
+  background: linear-gradient(#ff79d9, #9356dc);
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+button:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+}
+
+button:hover:after {
+  cursor: pointer;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 0.4;
+  transition: opacity 4s ease-in 4s;
+}
+
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  color: #EAEAEA;
+  padding-top: 22px;
+  padding-left: 25px;
+  padding-bottom: 22px;
+}
+
+.footer__title {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  color: #EAEAEA;
+  margin-bottom: 16px;
+}
+
+.footer__link__icon {
+  padding-right: 5px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #EAEAEA;
+  padding-bottom: 7px;
+}
+
+.footer__link__icon {
+  font-size: 13px;
+  width: 13px;
+}
+
+.fancy-checkbox input[type=checkbox],
+.fancy-checkbox .checked {
+  display: none;
+}
+
+.fancy-checkbox input[type=checkbox]:checked ~ .checked {
+  display: inline-block;
+}
+
+.fancy-checkbox input[type=checkbox]:checked ~ .unchecked {
+  display: none;
+}
+
+.icon__pink {
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: changeColor 0.2s linear forwards;
+}
+
+@keyframes changeColor {
+  0% {
+    opacity: 0;
+    color: #99E2D0;
+  }
+  100% {
+    color: #9356dc;
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.delay-1 {
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.delay-2 {
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in-out forwards;
+  animation-delay: 0.7s;
+}
+
+.delay-3 {
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in-out forwards;
+  animation-delay: 0.9s;
+}
+
+.delay-4 {
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in-out forwards;
+  animation-delay: 1.2s;
+}
+
+.delay-5 {
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in-out forwards;
+  animation-delay: 1.4s;
+}
+
+.delay-6 {
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in-out forwards;
+  animation-delay: 1.6s;
+}
+
+.delay-7 {
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in-out forwards;
+  animation-delay: 1.8s;
+}
+
+.delay-8 {
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+.delay-9 {
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in-out forwards;
+  animation-delay: 2.3s;
+}
+
+.delay-10 {
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in-out forwards;
+  animation-delay: 2.5s;
+}
+
+@media (min-width: 800px) {
+  .carte {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .carte__div__subtitle:after {
+    position: absolute;
+    margin-left: 12.5%;
+  }
+  .carte__div__header {
+    justify-content: center;
+  }
+  .carte__div__title {
+    width: auto;
+    margin-right: 10px;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 64px 50px 20px 0px;
+  }
+  .footer__title {
+    order: 5;
+    margin-left: 70px;
+  }
+  .footer__link {
+    margin-left: 15px;
+  }
+  .footer__link.contact {
+    order: 4;
+  }
+  .footer__link.mention {
+    order: 3;
+    padding-left: 30px;
+  }
+  .footer__link.devenir {
+    order: 2;
+  }
+  .footer__link.proposer {
+    order: 1;
+  }
+  .footer__link__icon {
+    padding-right: 15px;
+  }
+}/*# sourceMappingURL=page.css.map */
