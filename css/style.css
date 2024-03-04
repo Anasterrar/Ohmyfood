@@ -284,6 +284,68 @@ footer {
   width: 13px;
 }
 
+.loader {
+  padding-left: 50%;
+  padding-top: 50%;
+  position: absolute;
+  animation: hideLoader 3s forwards ease-in-out;
+}
+
+.green {
+  background-color: #99E2D0;
+  right: 0.6rem;
+}
+
+.purple {
+  background-color: #9356DC;
+}
+
+.blue {
+  background-color: #89C8FA;
+}
+
+.dot {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  animation: bounce 1.3s linear infinite;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -1s;
+}
+
+.dot:nth-child(3) {
+  right: -2.5rem;
+  animation-delay: -0.8s;
+}
+
+@keyframes bounce {
+  0%, 66%, 100% {
+    transform: initial;
+  }
+  33% {
+    transform: translateY(-1rem);
+  }
+}
+.content {
+  opacity: 0;
+  animation: showcontent 0.3s forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+@keyframes hideLoader {
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes showcontent {
+  to {
+    opacity: 1;
+  }
+}
 @media (min-width: 800px) {
   .fonctionnement__title {
     padding-left: 10%;
