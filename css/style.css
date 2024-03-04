@@ -143,4 +143,112 @@ button:hover:after {
 
 .fonctionnement__card__text {
   padding-right: 1.5rem;
+}
+
+.Restaurants {
+  background-color: #EAEAEA;
+  padding-bottom: 66px;
+}
+
+.Restaurants__title {
+  padding-top: 54px;
+  padding-left: 18px;
+}
+
+.Restaurants__carddiv {
+  margin: 18px;
+}
+
+.Restaurants__carddiv__card__article {
+  height: 251px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-bottom: 18px;
+}
+
+.Restaurants__carddiv__card__article__image {
+  height: 180px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__article__nouveau {
+  position: absolute;
+  padding: 6px 9px;
+  margin-left: -80px;
+  margin-top: 14px;
+  background-color: #99E2D0;
+  color: #008766;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.carddiv__text {
+  padding: 5px 14px;
+  color: black;
+  text-decoration: none;
+}
+
+.carddiv__text > div {
+  float: left;
+}
+
+.carddiv__text > div a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.card__article__title,
+.card__article__subtiltle {
+  text-decoration: none;
+}
+
+.carddiv__text > div {
+  float: left;
+}
+
+.card__article__subtiltle {
+  padding-top: 5px;
+  font-weight: 300;
+}
+
+.card__article__icon {
+  float: right;
+  padding: 1rem;
+  padding-top: -10px;
+  padding-right: 3px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.fancy-checkbox input[type=checkbox],
+.fancy-checkbox .checked {
+  display: none;
+}
+
+.fancy-checkbox input[type=checkbox]:checked ~ .checked {
+  display: inline-block;
+}
+
+.fancy-checkbox input[type=checkbox]:checked ~ .unchecked {
+  display: none;
+}
+
+.icon__pink {
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: changeColor 0.19s linear forwards;
+}
+
+@keyframes changeColor {
+  0% {
+    opacity: 0;
+    color: #99E2D0;
+  }
+  100% {
+    color: #9356dc;
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
