@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+// Variable *******
+$grey1:#F6F6F6;
+$grey2:#EAEAEA;
+$grey3:#7E7E7E;
+$purple:#9356DC;
+$darkgrey:#353535;
+$gradient1:#ff79d9;
+$gradient2:#9356dc;
+$gradient:linear-gradient($gradient1,$gradient2);
+$gradient-revers:linear-gradient($gradient2,$gradient1);
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+//*****Header*****//
+header {
+    display: flex;
+    flex-direction: column;
+}
+  
+.header__logo {
+    padding: 12px 0px 12px 0px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    z-index: 1;
+    box-shadow: 0px 2px 4px 0px #00000026;
+}
+  
+.header__logo__back {
+    display: none;
+}
+  
+.header__logo__h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    flex-grow: 1;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+}
+  
+.header__location {
+    text-align: center;
+    padding: 15.5px 0px 15.5px 0px;
+    background-color: $grey2;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.header__location__icon {
+    width: 12px;
+    height: 16px;
+    padding-right: 10px;
+}
