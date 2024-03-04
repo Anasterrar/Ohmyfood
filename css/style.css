@@ -251,4 +251,35 @@ button:hover:after {
     color: #9356dc;
     opacity: 1;
   }
+}
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  color: #EAEAEA;
+  padding-top: 22px;
+  padding-left: 25px;
+  padding-bottom: 22px;
+}
+
+.footer__title {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  color: #EAEAEA;
+  margin-bottom: 16px;
+}
+
+.footer__link__icon {
+  padding-right: 5px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #EAEAEA;
+  padding-bottom: 7px;
+}
+
+.footer__link__icon {
+  font-size: 13px;
+  width: 13px;
 }/*# sourceMappingURL=style.css.map */
